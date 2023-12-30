@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*
+J'utilise tailwindcss pour les styles mais tu peux créer d'autres styles si besoin
+https://tailwindcss.com
+*/
+
+.song-container {
+    @apply max-w-lg mx-auto text-center p-4;
+}
+
+.song-title {
+    @apply text-2xl font-bold mb-2;
+}
+
+.artist-name {
+    @apply text-lg italic mb-4;
+}
+
+.lyrics {
+    @apply text-base leading-relaxed;
+}
+
+.chorus {
+    @apply text-base leading-relaxed font-semibold text-yellow-800 p-2;
+}
+
+/*responsiveness*/
+
+@media (max-width: 767px) {
+  .smallscreen-hidden {
+      display: none;
+  }
+  .custom-placeholder {
+      /* Styles for placeholder */
+  }
+}
+
+@media (min-width: 767px) {
+  .largescreen-hidden {
+      display: none;
+  }
+  .custom-placeholder {
+      /* Styles for placeholder */
+  }
+}
+
+/*
+* Tu peux ajouter du css ici si besoin. Utilise des valeurs relatives (em)
+*/
+/* touche pas a ca
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+*/
